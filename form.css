@@ -1,0 +1,37 @@
+section{
+    
+    background-color: #e2e2e2;
+    margin: auto;
+    width: 320px;
+    padding: 2rem 1rem ;
+    border-radius: 0.5rem;
+}
+form div{
+   display: flex;
+   flex-direction: column;
+   gap: 0.5rem;
+}
+input{
+    border-radius: 8px;
+    padding: 1rem;
+    border: 0.2px solid #4e4e4e;
+}
+input:focus {
+    outline: none;
+    border: 2px solid blue;
+    box-shadow: 0 0 5px blue;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+button{
+    padding: 1rem;
+    background-color: black;
+    color: #e2e2e2;
+    border-radius: 8px;
+}
+ i {
+    color: #ff0000;
+ }

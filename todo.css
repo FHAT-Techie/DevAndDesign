@@ -1,0 +1,115 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  line-height: 1;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+button, input, select, textarea {
+  font: inherit;
+}
+
+
+main{
+    margin: 4rem auto;
+    background-color: aliceblue;
+    height: fit-content;
+    padding: 1rem;
+    width: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 1rem;
+    gap: 2rem;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+}
+
+.header h1{
+  font-size: 1.5rem;
+}
+.header div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    gap: 0.5rem;
+}
+.header input{
+    padding: 1rem;
+    width: 100%;
+    border: 0.5px solid #000;
+    border-radius: 0.5rem;
+}
+
+#enterTodo::placeholder{
+font-size: small;
+}
+.todoSection{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.todoBox{
+    display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1.2rem;
+  background-color: bisque;
+  border-radius: 8px;
+}
+.header button{
+padding: 1rem;
+background-color: aquamarine;
+border-radius: 1rem;
+font-size: medium;
+}
+
+.leftTodoBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+
+.rightTodoBox{
+    display: flex;
+    gap: 0.5rem;
+}

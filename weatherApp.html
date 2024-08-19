@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="weatherApp.css">
+    <script src="/weatherapp.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+<main>
+    <section class="inputSection">
+        <h1>Weather Update</h1>
+        <form id="form">
+            <label for="city">Enter City:
+                <input type="text" name="city" id="city" class="city" placeholder="Search for a city">
+            </label>
+            <button type="submit">Check Weather</button>
+        </form>
+    </section>
+
+    <!-- <section id="resultSection" class="resultSection">
+        <!-- <div class="resultBox">
+            <svg xmlns="http://www.w3.org/2000/svg" width="342" height="175" viewBox="0 0 342 175" fill="none">
+                <path d="M0 66.4396C0 31.6455 0 14.2484 11.326 5.24044C22.6519 -3.76754 39.6026 0.147978 73.5041 7.97901L307.903 62.1238C324.259 65.9018 332.436 67.7909 337.218 73.8031C342 79.8154 342 88.2086 342 104.995V131C342 151.742 342 162.113 335.556 168.556C329.113 175 318.742 175 298 175H44C23.2582 175 12.8873 175 6.44365 168.556C0 162.113 0 151.742 0 131V66.4396Z" fill="url(#paint0_linear_1502_281)"/>
+                <defs>
+                  <linearGradient id="paint0_linear_1502_281" x1="0" y1="128" x2="354.142" y2="128" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#5936B4"/>
+                    <stop offset="1" stop-color="#362A84"/>
+                  </linearGradient>
+                </defs>
+            </svg>
+            <div class="cardData">
+                <div id="card-top" class="card-top">
+                    <h1 class="degree" id="degree">19°</h1>
+                    <div class="image-box">
+                        <img class="weatherImage" src="Weatherimage/Moon cloud mid rain.png" alt="">
+                    </div>
+                </div>
+                <div class="card-btm" id="card-btm">
+                    <div class="locationSection">
+                        <p class="longAndLat" id="longAndLat">h:24°, L:18°</p>
+                        <p class="location" id="location">Montreal, Canada</p>
+                    </div>
+                    <p class="cloudReport" id="cloudReport">Heavy wind</p>
+                </div>
+            </div>
+        </div> -->
+    <!-- </section>  -->
+</main>
+
+</body>
+</html>

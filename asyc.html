@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<h1></h1>
+
+    <script>
+        let name = `fhatboy`
+
+   
+        let header = document.querySelector(`h1`)
+
+    name.split(``).forEach(function(item, index){
+     
+       
+       setTimeout(() => {
+        // let header = document.createElement(`h1`)  
+        header.append(item)
+
+       }, 2000  * (index + 1));    
+     });
+
+
+
+
+    //    setTimeout(
+    //     function(){
+    //   name.forEach(function(item){
+    //     let header = document.createElement(`h1`)  
+    //     header.innerText = item
+    //     body.append(header)
+    //  }) }, 5000
+    //    )
+    </script>
+</body>
+</html>

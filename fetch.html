@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+
+
+
+
+    <script>
+ let apiKey = `db78b3d94a007c958c44142be214ba78`
+ let city = `Lagos`
+        function fetchTest() {
+
+let request = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`
+            
+            fetch(request).then((data)=>{
+              return data.json()
+            }).then((weatherData) =>{
+                displayUI(weatherData) 
+            } ).catch(())
+        }
+
+        fetchTest()
+function displayUI(weatherData){
+    let body = document.querySelector(`body`)
+    let header = document.createElement(`h1`)
+    let current = weatherData.main.temp
+    header.innerText = current
+    body.append(header)
+}
+
+
+ </script>
+</body>
+</html>

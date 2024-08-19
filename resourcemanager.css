@@ -1,0 +1,236 @@
+/* Universal CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    font-family: "Roboto", sans-serif;
+}
+
+/* List resets */
+ol, ul {
+    list-style: none;
+}
+
+/* Quotes resets */
+blockquote, q {
+    quotes: none;
+}
+blockquote::before, blockquote::after, q::before, q::after {
+    content: '';
+    content: none;
+}
+
+/* Table resets */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+.firstSection{
+    display: flex;
+padding: 2rem;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+gap: 1rem;
+border-radius: 1rem;
+background: #E7E7E7;
+margin: 1rem;
+
+
+;
+}
+
+.firstSection h1{
+    color: #2e2e2e;
+font-size: 1.5rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+button{
+    display: flex; 
+padding: 1rem;
+justify-content: center;
+align-items: center;
+gap: 0.625rem;
+border-radius: 0.5rem;
+background: var(--Schemes-Primary, #864B6E);color: var(--Schemes-On-Primary, #FFF);
+font-family: Inter;
+font-size: 0.875rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.secondSection{
+    display: flex;
+    padding: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+    border-radius: 1rem;
+    background: #E7E7E7;
+    margin: 1rem;
+}
+
+.resourceCon{
+    display: flex;
+    width: 100%;
+    padding: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    flex-shrink: 0; 
+    border-radius: 0.5rem;
+background: #FFF;
+}
+.resourceheadDel{
+    display: flex;
+justify-content: space-between;
+align-items: center;
+align-self: stretch;
+}
+.reasourceHeader{
+    color: #000;
+    text-align: justify;
+    font-family: Roboto;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal; 
+}
+.reaDes{
+    color: #000;
+
+font-family: Roboto;
+font-size: 0.875rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.overlay{
+  position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+    display: none;
+ }
+
+.formContainer{
+    display: flex;
+padding: 2rem 1rem 1.5rem 1rem;
+flex-direction: column;
+align-items: flex-end;
+gap: 2.125rem;
+border-radius: 1rem;
+background: #F5F1F1;
+position: fixed; /* Fix the container relative to the viewport */
+top: 50%;        /* Position 50% from the top of the viewport */
+left: 50%;       /* Position 50% from the left of the viewport */
+transform: translate(-50%, -50%); /* Center the container */
+z-index: 1000;
+
+}
+@media screen and {
+    
+}
+form{
+    display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 1.5rem;
+align-self: stretch;
+margin: auto;
+}
+
+.formContainer h1{
+    color: #4E4E4E;
+text-align: center;
+font-family: Inter;
+font-size: 1.5rem;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+ .entries{
+    display: flex;
+width: 23.6875rem;
+flex-direction: column;
+align-items: flex-start;
+gap: 0.25rem;
+ }
+ @media (max-width: 480px) {
+    .entries {
+      width: 18rem;
+    }
+  }
+  
+
+
+ label{
+    color: #2E2E2E;
+
+font-family: Inter;
+font-size: 0.875rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+ }
+
+ input{
+    display: flex;
+padding: 1rem;
+align-items: center;
+gap: 0.625rem;
+align-self: stretch;
+border-radius: 0.5rem;
+border: 1px solid rgba(0, 0, 0, 0.30);
+ }
+ textarea{
+    display: flex;
+    height: 6.25rem;
+    padding: 1rem;
+    align-items: flex-start;
+    gap: 0.625rem;
+    align-self: stretch; 
+    border-radius: 0.5rem;
+border: 1px solid rgba(0, 0, 0, 0.30);
+ }
+ #save{
+    width: 100%;
+ }
+
+ .link{
+   font-style: italic;
+   font-size: small;
+   color: red;
+   text-decoration: underline;
+ }

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resource Manager</title>
+    <link rel="stylesheet" href="resourcemanager.css">
+    <script src="resourcemanager.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <main class = "mainBody" id="mainBody">
+        <section class="firstSection" id="firstSection">
+            <h1>Welcome</h1>
+            <button id="btn">Create Resource</button>
+        </section>
+
+
+
+
+    <section class="secondSection">
+        <!-- <div class="resourceCon">
+            <div class="resourceheadDel">
+                <h1 class="reasourceHeader">
+                    Website Name
+                </h1>
+                    <div class="DelContainer">
+                        <i class="fa-solid fa-trash"></i>
+                    </div>
+                </div>
+               <p class="link">link</p>
+<p class="reaDes">Website Description</p>
+        </div> -->
+    </section>
+
+
+
+
+
+
+    </main>
+<div class="overlay">
+    <div class="formContainer" id="formCon">
+       <div class="canContainer">
+        <i class="fa-solid fa-xmark"></i>
+       </div>
+       <form action="">
+        <h1>Create Resource</h1>
+        <div class="entries">
+        <label for="name">Name of Website</label>
+        <input type="text" id="nameOfWebsite" name="name" class="input" placeholder="e.g Data Analysis for NASA">
+    </div>
+        <div class="entries">
+        <label for="link">Link of Website</label>
+        <input type="text" id="linkOfWebsite" name="link" class="input" placeholder="www.link.com">
+    </div>
+        <div class="entries">
+        <label for="description">Description of Website</label>
+        <textarea name="descriptionOfWebsite" id="descriptionOfWebsite" class="textarea" placeholder="About the sun">
+
+        </textarea>
+       
+    </div>
+    <button id="save" type="submit">Save Resource</button>
+       </form>
+    </div>
+</div>
+</body>
+</html>

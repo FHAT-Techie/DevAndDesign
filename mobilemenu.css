@@ -1,0 +1,155 @@
+/* Universal selector reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Optional: inherit fonts for better consistency */
+body, input, textarea, button, select {
+    font-family: inherit;
+    font-size: 100%;
+    color: inherit;
+   
+}
+
+/* Optional: setting list and table styles */
+ul, ol {
+    list-style: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+body{
+    background-color: #090907;
+    color: aliceblue;
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+}
+
+.desktopNav{
+    display: flex;
+    /* width: 67.625rem; */
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 3rem 1rem 3rem;
+}
+.logoBox{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.logoBox i{
+    display: none;
+}
+
+
+
+ul{
+    display: flex;
+width: 35.5625rem;
+justify-content: space-between;
+align-items: flex-start;
+flex-shrink: 0;
+}
+ul li {
+    color: #FFF;
+text-align: center;
+font-family: Roboto;
+font-size: 0.875rem;
+font-style: normal;
+font-weight: 400;
+line-height: 1.5rem; /* 171.429% */
+}
+
+button{
+    display: flex;
+    padding: 0.5rem 1rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    border-radius: 0.5rem;
+background: #090907;
+border: #000;
+color: #FFF;
+text-align: center;
+font-family: Roboto;
+font-size: 0.875rem;
+font-style: normal;
+font-weight: 400;
+line-height: 1.5rem;
+}
+.btnCon {
+    display: flex;
+    gap: 16px;
+}
+.btnCon :first-child{
+    background: none;
+    border: 0.1px solid #ada5ca;
+}
+@media only screen and (max-width: 1110px){
+    .logoBox i{
+        display: block;
+        
+    }
+    .desktopNav ul,.desktopNav .btnCon{
+        display: none;
+       
+    }
+}
+
+
+
+.mobileNav{
+width: 220px;
+padding: 1rem;
+height: 100vh;
+background-color:#041834 ;
+display: none;
+flex-direction: column;
+gap: 2rem;
+z-index: 9999999999;
+position: fixed;
+}
+.mobilelogoBox{
+    display: flex;
+    align-items: center;
+gap: 2rem;    
+padding: 0rem 1rem 0rem 1rem;
+}
+.mobileUL{
+    display: flex;
+    flex-direction: column;
+}
+.mobileUL li{
+padding: 0px 1rem;
+height: 40px;
+display: flex;
+align-items: center;
+width: 188px;
+border-radius: 8px;
+}
+.mobileUL :first-child{
+    background-color:#1B314F ;
+}
+
+.moblieBtnCon{
+    display: flex;
+    flex-direction: column;
+  gap: 8px;
+}
+
+.moblieBtnCon :first-child{
+    background: none;
+    border: 0.1px solid #ada5ca;
+}
+
+@media screen and (min-width :1100px) {
+    .mobileNav{ 
+        display: none;
+    }
+}

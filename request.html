@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+
+
+
+    <script>
+let request = new XMLHttpRequest()
+
+request.open(`GET`, "./request.json")
+
+
+request.onreadystatechange = function(){
+    if (this.readyState === 4 && this.status === 200 ) {
+        let data = JSON.parse(this.responseText)
+
+        data.forEach(function(items){
+         let header = document.createElement(`h1`)
+         let body = document.querySelector(`body`)
+
+         header.innerText = `My name is ${items.name} and i'm from ${items.country}`
+
+         body.append(header)
+        })
+
+        
+            
+       
+    }
+}
+
+request.send()
+
+    </script>
+</body>
+</html>
